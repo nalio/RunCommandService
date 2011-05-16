@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<serviceType xmlns="http://www.sonicsw.com/sonicxq" name="RunProgram" factoryClass="com.progress.codeshare.esbservice.RunProgram.RunProgram" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Sonic/ESB7.5/schema/serviceType.xsd">
+	<validParams>
+		<init>
+		    <stringParam name="ProgramImagePath" required="true">
+		        <default edittable="true" editAsRef="false">c:\windows\system32\cmd.exe</default>
+		    </stringParam>
+		    <stringParam name="ProgramParameters" required="false">
+		        <default edittable="true" editAsRef="false">/C dir</default>
+		    </stringParam>
+		</init>
+	    <runtime>
+	        <stringParam name="MessagePart"></stringParam>
+	    </runtime>
+	</validParams>
+</serviceType>
